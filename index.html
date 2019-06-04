@@ -1,0 +1,15 @@
+<html ng-app="OlaMundo">
+<head>
+	<meta charset="utf-8">
+	<title>Olá Mundo</tilte>
+	<script 	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script>
+		angular.module("OlaMundo", []).controller("OlaMundoCtrl", function ($scope){
+			$scope.app="Olá, bem vindo ao meu primeiro programa";
+		});
+	</script>
+</head>
+<body ng-controller="OlaMundoCtrl">
+	{{app}}
+</body>
+</html>
