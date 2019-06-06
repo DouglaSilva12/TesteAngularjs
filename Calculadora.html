@@ -30,7 +30,7 @@
                     $scope.apagarCalculo = function (calculo){
                         delete $scope.calculo;
                        // $scope.historicos.push({a: "", operador: "", b: "", caluclo: ""});
-                        $scope.number.tamanho = historicos.length;  
+                        $scope.historicos;  
                     }
                     $scope.historicos = [
                         {a: "", operdaor: "", b: "", calculo: ""},
@@ -38,22 +38,22 @@
                     $scope.soma = function(a, b, operador){
                         $scope.calculo = a + b;
                         $scope.historicos.push({a: a, operador: operador, b: b, calculo: a+b});
-                        $scope.number.tamanho = historicos.length;
+                        $scope.historicos;
                     }
                     $scope.sub = function(a, b, operador){
                         $scope.calculo = a - b;
                         $scope.historicos.push({a: a, operador: operador, b: b, calculo: a-b});
-                        $scope.number.tamanho = historicos.length;
+                        $scope.historicos;
                     }
                     $scope.mult = function(a, b, operador){
                         $scope.calculo = a*b;
                         $scope.historicos.push({a: a, operador: operador, b: b, calculo: a*b});
-                        $scope.numer.tamanho = historicos.length;
+                        $scope.historicos;
                     }
                     $scope.div = function(a, b, operador){
                         $scope.calculo = a/b;
-                        $scopre.historicos.push({a: a, operador: operador, b: b, calculo: a/b});
-                        $scope.number.tamanho = historicos.length;
+                        $scope.historicos.push({a: a, operador: operador, b: b, calculo: a/b});
+                        $scope.historicos;
                     }
                 });
         </script>
